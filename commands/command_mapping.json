@@ -1,0 +1,10 @@
+{
+  "commands" : [
+    {
+      "tell_me_a_joke": "joke, tell me joke, tell a joke, tell me something funny"
+    },
+    {
+      "get_live_score": "what's the score now, how's the match going, cricket score"
+    }
+  ]
+}
