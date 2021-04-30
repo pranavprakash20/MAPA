@@ -1,12 +1,14 @@
 from edith import *
 
+
 class Mapa:
 
     def __init__(self):
-        show_welcome_message()
+        self.edith = Edith()
+        self.edith.show_welcome_message()
 
     def mapa(self, command):
-        method = get_skill(command)
+        method = self.edith.get_skill(command)
         try:
             getattr(sys.modules[__name__], method)()
         except AttributeError:
@@ -14,4 +16,4 @@ class Mapa:
 
 
 obj = Mapa()
-obj.mapa("tell me a joke")
+obj.mapa("tell me something funny")

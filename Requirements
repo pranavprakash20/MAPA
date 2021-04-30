@@ -1,0 +1,9 @@
+yum install espeak
+yum install python-pyaudio python3-pyaudio
+
+pyjokes
+comtypes
+wikipedia
+pyttsx3
+SpeechRecognition
+

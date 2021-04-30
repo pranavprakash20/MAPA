@@ -1,7 +1,5 @@
 from pycricbuzz import Cricbuzz
-
-def get_match_score():
-    c = Cricbuzz()
-    print(c.matches())
-
-get_match_score()
+import json
+c = Cricbuzz()
+lscore = c.livescore("30330")
+print(json.dumps(lscore, indent=4, sort_keys=True))
