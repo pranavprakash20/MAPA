@@ -11,9 +11,9 @@ class Mapa:
         method = self.edith.get_skill(command)
         try:
             getattr(sys.modules[__name__], method)()
-        except AttributeError:
+        except Exception:
             print("Uh Ohh, I didn't get that. Please try `mapa help` for help")
 
 
 obj = Mapa()
-obj.mapa("tell me something funny")
+obj.mapa("tell me a joke")

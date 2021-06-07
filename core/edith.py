@@ -11,8 +11,8 @@ import subprocess
 import json
 import requests
 sys.path.append("../")
-from what_i_can_do.joke import tell_me_a_joke
-
+from what_i_can_do.joke import *
+from what_i_can_do.search_wiki import *
 
 class Edith:
     """ Yes, the name says it all, I do the background work :P"""
